@@ -1,5 +1,5 @@
 html {
-
+    height: 100%;
  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 .app-wrapper {
@@ -14,4 +14,10 @@ html {
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
     grid-gap: 10px;
+}
+
+
+.app-wrapper-content {
+    grid-area: c;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
