@@ -1,6 +1,6 @@
 html {
     height: 100%;
- background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-color: #222226;
 }
 .app-wrapper {
     margin: 0 auto;
@@ -13,11 +13,13 @@ html {
     "n c";
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 
 .app-wrapper-content {
     grid-area: c;
-    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    background-color: #333336;
+    border: 1px solid black;
+    box-shadow: 1px 0px 5px gray;
 }
