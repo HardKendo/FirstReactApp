@@ -2,19 +2,24 @@ import React from 'react';
 import style from './MyPosts.module.css';
 import Post from './Post/Post';
 
-const MyPosts = () => {
-    return (
+const MyPosts = (props) => {
+  let postsElemenets = props.postData.map(post => <Post message={post.post} like={post.like} />);
+  return (
+    <div className={style.MP}>
+      <h3>My posts</h3>
       <div>
-        My posts
         <div>
           <textarea></textarea>
+        </div>
+        <div>
           <button>Add post</button>
         </div>
-       <Post message='Hi, how are you?' like='15'/>
-       <Post message='It is my first post' like='20'/>
       </div>
-
-    );
+      <div className={style.posts}>
+        {postsElemenets}
+      </div>
+    </div>
+  );
 }
 
 

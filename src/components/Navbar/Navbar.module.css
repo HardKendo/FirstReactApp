@@ -1,8 +1,25 @@
 .nav {
     grid-area: n;
-    background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+    padding: 20px;
+    height: 200px;
 }
 
-.item {
-    color: white;
+.item a{
+    color: #777777;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.item:hover {
+    
+    background-color: #333336;
+}
+
+.set {
+    margin-top: 50px;
+}
+
+.item a.active {
+    color: gold;
 }
